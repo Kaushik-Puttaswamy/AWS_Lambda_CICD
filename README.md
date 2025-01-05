@@ -22,6 +22,12 @@ CI/CD stands for Continuous Integration/Continuous Deployment. It’s a way to a
 	•	The workflow packages the function, installs any required dependencies (like requests for making HTTP requests and pandas for processing data), and uploads it to AWS Lambda.
 	•	If the Lambda function already exists, it updates the existing function with new code. If not, it creates a new Lambda function.
 
+#### Lambda Function Overview
+![Lambda_function_overview.png](https://github.com/Kaushik-Puttaswamy/AWS_Lambda_CICD/blob/main/Lambda_function_overview.png)
+
+#### app.py Output
+![app.py_output.png](https://github.com/Kaushik-Puttaswamy/AWS_Lambda_CICD/blob/main/app.py_output.png)
+
 ### How to Use
 	1.	Set up AWS Credentials: You’ll need an AWS account with access to Lambda and a secret access key, which you store safely in GitHub.
 	2.	Push Code: Whenever you make a change to the code and push it to GitHub (on the main or test branch), GitHub Actions will automatically take care of deploying the code to AWS.
@@ -30,3 +36,5 @@ CI/CD stands for Continuous Integration/Continuous Deployment. It’s a way to a
 ### Why This Is Useful
 
 Instead of manually uploading your code every time, you set up this automation, which makes the whole process faster and reduces human errors. You can deploy code to AWS just by pushing it to a GitHub branch!
+
+
